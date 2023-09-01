@@ -1,3 +1,8 @@
+.search-component {
+ display: flex;
+ justify-content: center;
+}
+
 .weather-item {
   padding: 0.5rem;
   margin: 1rem 0;

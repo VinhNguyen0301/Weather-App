@@ -5,11 +5,16 @@ import Card from "../../UI/Card";
 import Rain from "../../../assets/images/rain.png";
 import Humidity from "../../../assets/images/humidity.png";
 import Wind from "../../../assets/images/wind.png";
+import Search from "../Search/Search";
 
 const WeatherItem = (props) => {
   return (
     <Card>
       <div className="weather-item">
+        <div className="search-component">
+        <Search />
+
+        </div>
         <div className="weather-icon">
           <img src={Rain} alt="Rain" />
         </div>
