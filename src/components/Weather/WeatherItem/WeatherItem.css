@@ -1,8 +1,23 @@
 .weather-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    margin: 1rem 0;
-    background-color: #4b4b4b;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background: linear-gradient(135deg, #3498db, #a9cce3);
+  color: #fff;
+}
+
+.temp-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temp {
+  font-size: 3.5rem;
+}
+.info-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
