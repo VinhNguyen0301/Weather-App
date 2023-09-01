@@ -1,14 +1,14 @@
-import './App.css'
+import "./App.css";
+import React, { useState } from "react";
+
+import Weather from "./components/Weather/Weather";
 
 function App() {
-
   return (
-    <>
-    <h1>
-      Weather-App
-    </h1>
-    </>
-  )
+    <div>
+      <Weather />
+    </div>
+  );
 }
 
-export default App
+export default App;
