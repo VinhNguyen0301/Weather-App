@@ -1,11 +1,14 @@
 .weather-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
   background: linear-gradient(135deg, #3498db, #a9cce3);
   color: #fff;
+}
+
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .temp-detail {
@@ -16,8 +19,29 @@
 .temp {
   font-size: 3.5rem;
 }
+
 .info-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.col {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.humidity-img {
+  width: 35%;
+}
+
+.wind-img {
+  width: 30%;
+}
+
+.humidity,
+.wind {
+  font-size: 23px;
 }
