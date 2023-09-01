@@ -24,8 +24,8 @@ const Weather = (props) => {
   }, []);
 
   return (
-    <div>
-      <Card className="weather">
+    <div className="weather">
+      <Card className="weather-background">
         <div className="search-component">
           <Search />
         </div>

@@ -5,3 +5,7 @@
   width: 50rem;
   max-width: 95%;
 }
+.weather-background {
+  background: linear-gradient(135deg, #3498db, #a9cce3);
+
+}

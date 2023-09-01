@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./WeatherItem.css";
-import Card from "../../UI/Card";
 import Rain from "../../../assets/images/rain.png";
 import Humidity from "../../../assets/images/humidity.png";
 import Wind from "../../../assets/images/wind.png";
@@ -9,13 +8,12 @@ import Wind from "../../../assets/images/wind.png";
 const WeatherItem = ({weatherData}) => {
   
   return (
-    <Card>
+    <div>
       <div className="weather-item">
-      
         <div className="weather-icon">
           <img src={Rain} alt="Rain" />
         </div>
-        <div className="temp temp-detail">{weatherData?.main?.temp}</div>
+        <div className="temp temp-detail">{Math.round(weatherData?.main?.temp)}℃</div>
         <div className="city temp-detail">{weatherData?.name}</div>
 
         <div className="info-detail">
@@ -35,7 +33,7 @@ const WeatherItem = ({weatherData}) => {
           </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 

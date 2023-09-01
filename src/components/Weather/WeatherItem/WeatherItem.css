@@ -8,6 +8,8 @@
   margin: 1rem 0;
   background: linear-gradient(135deg, #3498db, #a9cce3);
   color: #fff;
+  border-radius: 12px;
+  border-top-style: hidden;
 }
 
 .weather-icon {
