@@ -19,6 +19,9 @@
 .temp {
   font-size: 3.5rem;
 }
+.city {
+  font-size: 26px;
+}
 
 .info-detail {
   display: flex;
@@ -44,4 +47,14 @@
 .humidity,
 .wind {
   font-size: 23px;
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    margin-left: 20px;
+  }
+  .humidity,
+  .wind {
+    font-size: 15px;
+  }
 }
