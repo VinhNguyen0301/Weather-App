@@ -40,7 +40,11 @@ const Weather = () => {
         <div className="search-component">
           <Search onSearchCity={checkWeather} />
         </div>
-        <WeatherItem weatherData={weatherData} />
+        {error ? (
+          <div className="error-message">Invalid city name</div>
+        ) : (
+          <WeatherItem weatherData={weatherData} />
+        )}
       </Card>
     </div>
   );

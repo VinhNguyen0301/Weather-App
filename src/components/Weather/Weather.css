@@ -7,5 +7,12 @@
 }
 .weather-background {
   background: linear-gradient(135deg, #3498db, #a9cce3);
+}
 
+.error-message {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
