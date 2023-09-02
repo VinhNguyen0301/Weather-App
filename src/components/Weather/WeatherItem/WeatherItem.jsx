@@ -6,6 +6,7 @@ import Humidity from "../../../assets/images/humidity.png";
 import Wind from "../../../assets/images/wind.png";
 
 const WeatherItem = ({ weatherData }) => {
+  console.log("weatherData", weatherData);
   return (
     <div>
       <div className="weather-item">

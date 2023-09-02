@@ -10,8 +10,9 @@ const Weather = (props) => {
   const [weatherData, setWeatherData] = useState({});
 
   const checkWeather = async (cityQuery) => {
+    const cityQueryDefault = cityQuery || 'Sydney'
     const apiKey = "5c8a89b7f3f21acf674f93dd5ac8d9a7";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}&q=${cityQuery}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}&q=${cityQueryDefault}`;
 
     const response = await fetch(apiUrl);
     let data = await response.json();
