@@ -23,6 +23,8 @@ Open [http://localhost:5173/]to view it in your browser.
 - As a user, I can see error message if input wrong name city
 - As a user, I can view & use this website via desktop as well as mobile
 
+2. Link Youtube Demo : https://youtu.be/PAi69aYg7CY
+
 3. Technical Requirements
 
 - Using https://openweathermap.org/ API  to return real data
