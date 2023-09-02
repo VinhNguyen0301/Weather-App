@@ -1,16 +1,34 @@
 import React from "react";
 
 import "./WeatherItem.css";
-import Rain from "../../../assets/images/rain.png";
+import CloudsImage from "../../../assets/images/clouds.png";
+import ClearImage from "../../../assets/images/clear.png";
+import DrizzleImage from "../../../assets/images/drizzle.png";
+import RainImage from "../../../assets/images/rain.png";
+import MistImage from "../../../assets/images/mist.png";
 import Humidity from "../../../assets/images/humidity.png";
 import Wind from "../../../assets/images/wind.png";
 
+const weatherIcons = {
+  Clouds: CloudsImage,
+  Clear: ClearImage,
+  Drizzle: DrizzleImage,
+  Rain: RainImage,
+  Mist: MistImage,
+};
+
 const WeatherItem = ({ weatherData }) => {
+  console.log("weatherData", weatherData);
+  const weatherIcon = weatherData?.weather?.[0]?.main || "Unknown";
+  const WeatherImage = weatherIcons[weatherIcon] || "Unknown";
+
   return (
     <div>
       <div className="weather-item">
         <div className="weather-icon">
-          <img src={Rain} alt="Rain" />
+          <div className="weather-icon">
+            <img src={WeatherImage} alt={weatherIcon} />
+          </div>
         </div>
         <div className="temp temp-detail">
           {Math.round(weatherData?.main?.temp)}℃

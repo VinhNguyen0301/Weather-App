@@ -12,10 +12,10 @@ const Weather = () => {
 
   const checkWeather = async (cityQuery) => {
     try {
-      const cityQueryDefault = cityQuery || 'Sydney'
+      const cityQueryDefault = cityQuery || "Sydney";
       const apiKey = import.meta.env.VITE_API_KEY;
       const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}&q=${cityQueryDefault}`;
-  
+
       const response = await fetch(apiUrl);
       if (!response.ok) {
         throw new Error("API request failed");
@@ -28,7 +28,6 @@ const Weather = () => {
       setError("Error fetching weather data. Please try again.");
       console.error("Error fetching weather data:", error);
     }
-   
   };
 
   useEffect(() => {

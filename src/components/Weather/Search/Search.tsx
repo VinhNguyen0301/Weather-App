@@ -10,7 +10,7 @@ const Search = (props) => {
   };
   const onSearch = (searchTerm) => {
     props.onSearchCity(searchTerm);
-    setValue('')
+    setValue("");
   };
 
   return (
