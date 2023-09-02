@@ -8,6 +8,14 @@ const Search = (props) => {
   const onChange = (event) => {
     setValue(event.target.value);
   };
+
+  const onKeyDown = (event) => {
+    if (event.key === "Enter") {
+      // Trigger the search when Enter key is pressed
+      onSearch(value);
+    }
+  };
+
   const onSearch = (searchTerm) => {
     props.onSearchCity(searchTerm);
     setValue("");
@@ -21,6 +29,7 @@ const Search = (props) => {
         spellCheck="false"
         value={value}
         onChange={onChange}
+        onKeyDown={onKeyDown}
       />
       <button onClick={() => onSearch(value)}>
         <img src={SearchIcon} alt="SearchIcon" />
